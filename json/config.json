@@ -1,1 +1,12 @@
-[{"url": "http://www.cutleryshoppe.com/search.aspx?find=SEARCH", "find_key": "find"}, {"url": "http://www.bladehq.com/index.php?search=SEARCH&x=0&y=0", "find_key": "search"}, {"url": "http://www2.knifecenter.com/kc_new/store_store.html?usrsearch=SEARCH", "find_key": "usrsearch"}, {"url": "http://www.knifeworks.com/search.aspx?find=SEARCH", "find_key": "find"}, {"url": "http://www.gpknives.com/catalogsearch/result/?q=SEARCH", "find_key": "q"}, {"url": "http://www.bladeops.com/searchresults.asp?Search=SEARCH", "find_key": "Search"}, {"url": "http://www.nationalknives.com/search.php?Search=&search_query=SEARCH", "find_key": "search_query"}, {"url": "http://www.newgraham.com/store/search.asp?keyword=SEARCH", "find_key": "keyword"}, {"url": "https://www.knivesshipfree.com/search.php?search_query=SEARCH&x=12&y=14", "find_key": "search_query"}, {"url": "http://www.countryknives.com/?post_type=product&s=SEARCH", "find_key": "s"}, {"url": "http://www.knifeoutlet.com/shop/10Browse.asp?txtCategory=&txtSearchString=Dragonfly&btnSearch.x=22&btnSearch.y=14", "find_key": "txtSearchString"}, {"url": "http://www.riversedgecutlery.com/catalogsearch/result/?q=SEARCH", "find_key": "q"}]
+[
+    {"url": "http://www.cutleryshoppe.com/search.aspx?find=SEARCH", "find_key": "find"},
+    {"url": "http://www.bladehq.com/index.php?search=SEARCH&x=0&y=0", "find_key": "search"},
+    {"url": "http://www2.knifecenter.com/kc_new/store_store.html?usrsearch=SEARCH", "find_key": "usrsearch"},
+    {"url": "http://www.knifeworks.com/search.aspx?find=SEARCH", "find_key": "find"},
+    {"url": "http://www.gpknives.com/catalogsearch/result/?q=SEARCH", "find_key": "q"},
+    {"url": "http://www.bladeops.com/searchresults.asp?Search=SEARCH", "find_key": "Search"},
+    {"url": "http://www.nationalknives.com/search.php?Search=&search_query=SEARCH", "find_key": "search_query"},
+    {"url": "http://www.newgraham.com/store/search.asp?keyword=SEARCH", "find_key": "keyword"},
+    {"url": "https://www.knivesshipfree.com/search.php?search_query=SEARCH&x=12&y=14", "find_key": "search_query"},
+    {"url": "http://www.countryknives.com/?post_type=product&s=SEARCH", "find_key": "s"}
+]

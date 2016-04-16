@@ -4,11 +4,15 @@ import json
 import sys
 import os
 
+import requests
+
 from stores import Store
 
 
 class StoreLauncher(object):
     """A configureable object that launches webstores."""
+
+    default_config_url = 'https://raw.githubusercontent.com/cswope/knifesearcher/master/json/config.json'
 
     config    = list
     cached    = list
@@ -16,17 +20,24 @@ class StoreLauncher(object):
 
     def __init__(self, path=None):
         """Initiate a new instance of StoreLauncher."""
-        if path is not None:
-            self.configure(path)
+        self.configure(path)
         self.cached = []
 
     def configure(self, path=None):
         """Configure the StoreLauncher from a json compliant text file."""
-        if os.path.exists(path) is False:
+
+        if path and os.path.exists(path) is False:
             msg = 'There\'s no config file at: {path}'.format(path=path)
             raise IOError(msg)
-        with open(path, 'r') as f:
-            self.config = json.loads(f.read())
+        elif path:
+            with open(path, 'r') as f:
+                self.config = json.loads(f.read())
+        else:
+            try:
+                response = requests.Session().get(self.default_config_url)
+                self.config = json.loads(response.content)
+            except:
+                print 'Unable to configure StoreLauncher.'
 
     def set_webstores(self):
         """Generate the list of Store objects from the config."""
@@ -68,7 +79,7 @@ class StoreLauncher(object):
                 return
         self.header()
         self.cached.append(criteria)
-        for store in self.webstores:
+        for store in self.get_webstores():
             store.search(criteria)
         self.search()
 
