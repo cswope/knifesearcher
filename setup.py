@@ -1,6 +1,6 @@
 from distutils.core import setup
 setup(name='knifesearcher',
-      version='0.0.2',
+      version='0.0.3',
       author='Chris Swope',
       maintainer='Chris Swope',
       maintainer_email='cswope@capella.edu',
