@@ -77,11 +77,9 @@ class StoreLauncher(object):
             criteria = raw_input('Enter search criteria: ')
             if criteria == '':
                 return
-        self.header()
         self.cached.append(criteria)
         for store in self.get_webstores():
             store.search(criteria)
-        self.search()
 
     def store_dispatch(self, criteria, name):
         """Search a single Store."""
